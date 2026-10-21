@@ -73,21 +73,25 @@
       position: fixed;
       inset: 0;
       z-index: -20;
-      background: linear-gradient(180deg, rgba(5, 10, 24, 0.64) 0%, rgba(5, 10, 24, 0.76) 50%, rgba(5, 10, 24, 0.88) 100%);
-      backdrop-filter: blur(2.5px);
-      -webkit-backdrop-filter: blur(2.5px);
+      background: linear-gradient(180deg, rgba(5, 10, 24, 0.52) 0%, rgba(5, 10, 24, 0.65) 50%, rgba(5, 10, 24, 0.82) 100%);
+      backdrop-filter: blur(1.5px);
+      -webkit-backdrop-filter: blur(1.5px);
     }
 
-    /* iOS 28 Futuristic Liquid Glass Buttons */
+    /* Ultra-Transparent Pure Crystal Glass Buttons */
     .liquid-btn {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(28px) saturate(220%);
-      -webkit-backdrop-filter: blur(28px) saturate(220%);
-      border: 1px solid rgba(255, 255, 255, 0.28);
-      box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.5), inset 0 -1px 1px 0 rgba(0, 0, 0, 0.25), 0 10px 28px -6px rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px) saturate(200%) contrast(105%);
+      -webkit-backdrop-filter: blur(16px) saturate(200%) contrast(105%);
+      border: 1px solid rgba(255, 255, 255, 0.38);
+      box-shadow: inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.7), 
+                  inset 0 -1px 1px 0 rgba(255, 255, 255, 0.15), 
+                  0 8px 32px 0 rgba(0, 0, 0, 0.35);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
+      color: #ffffff;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
     }
     .liquid-btn::before {
       content: '';
@@ -96,32 +100,39 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.45), transparent);
       transition: all 0.6s ease;
     }
     .liquid-btn:hover::before {
       left: 100%;
     }
     .liquid-btn:hover {
-      background: rgba(255, 255, 255, 0.16);
-      border-color: rgba(6, 182, 212, 0.7);
+      background: rgba(255, 255, 255, 0.12);
+      border-color: rgba(255, 255, 255, 0.75);
       transform: translateY(-2px);
-      box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.7), 0 16px 36px -8px rgba(6, 182, 212, 0.45);
+      box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.95), 
+                  inset 0 -1px 1px 0 rgba(255, 255, 255, 0.3), 
+                  0 16px 40px -6px rgba(0, 0, 0, 0.5);
     }
     .liquid-btn:active {
-      transform: scale(0.97);
+      transform: scale(0.96);
     }
 
-    /* iOS Electric Cyan Liquid Glass (Primary Action) */
+    /* Ultra-Transparent Tinted Crystal Glass (Primary Action) */
     .liquid-btn-cyan {
-      background: linear-gradient(135deg, rgba(6, 182, 212, 0.45) 0%, rgba(14, 116, 144, 0.28) 100%);
-      backdrop-filter: blur(28px) saturate(220%);
-      -webkit-backdrop-filter: blur(28px) saturate(220%);
-      border: 1px solid rgba(103, 232, 249, 0.65);
-      box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.75), inset 0 -1px 1px 0 rgba(0, 0, 0, 0.25), 0 14px 35px -6px rgba(6, 182, 212, 0.5);
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.18) 0%, rgba(6, 182, 212, 0.04) 50%, rgba(14, 116, 144, 0.12) 100%);
+      backdrop-filter: blur(16px) saturate(210%) contrast(105%);
+      -webkit-backdrop-filter: blur(16px) saturate(210%) contrast(105%);
+      border: 1px solid rgba(103, 232, 249, 0.7);
+      box-shadow: inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.9), 
+                  inset 0 -1px 1px 0 rgba(6, 182, 212, 0.35), 
+                  0 8px 32px 0 rgba(0, 0, 0, 0.4),
+                  0 0 20px -4px rgba(6, 182, 212, 0.3);
       transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
       position: relative;
       overflow: hidden;
+      color: #ffffff;
+      text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     }
     .liquid-btn-cyan::before {
       content: '';
@@ -130,36 +141,40 @@
       left: -100%;
       width: 100%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.55), transparent);
       transition: all 0.6s ease;
     }
     .liquid-btn-cyan:hover::before {
       left: 100%;
     }
     .liquid-btn-cyan:hover {
-      background: linear-gradient(135deg, rgba(6, 182, 212, 0.65) 0%, rgba(14, 116, 144, 0.45) 100%);
-      border-color: rgba(165, 243, 252, 0.9);
+      background: linear-gradient(135deg, rgba(6, 182, 212, 0.28) 0%, rgba(6, 182, 212, 0.08) 50%, rgba(14, 116, 144, 0.2) 100%);
+      border-color: rgba(165, 243, 252, 0.95);
       transform: translateY(-2px);
-      box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.9), 0 20px 45px -8px rgba(6, 182, 212, 0.7);
+      box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 1), 
+                  0 16px 40px -6px rgba(6, 182, 212, 0.45),
+                  0 0 28px 0 rgba(6, 182, 212, 0.4);
     }
     .liquid-btn-cyan:active {
-      transform: scale(0.97);
+      transform: scale(0.96);
     }
 
-    /* iOS Liquid Glass Cards */
+    /* Ultra-Transparent Glass Cards */
     .liquid-card {
-      background: rgba(8, 14, 30, 0.62);
-      backdrop-filter: blur(24px) saturate(200%);
-      -webkit-backdrop-filter: blur(24px) saturate(200%);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.22), 0 14px 38px -10px rgba(0, 0, 0, 0.75);
+      background: rgba(8, 14, 30, 0.42);
+      backdrop-filter: blur(18px) saturate(190%);
+      -webkit-backdrop-filter: blur(18px) saturate(190%);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: inset 0 1px 1.5px 0 rgba(255, 255, 255, 0.28), 
+                  0 14px 38px -10px rgba(0, 0, 0, 0.7);
       transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .liquid-card:hover {
       transform: translateY(-4px) scale(1.01);
-      border-color: rgba(6, 182, 212, 0.6);
-      box-shadow: inset 0 1px 2px 0 rgba(255, 255, 255, 0.4), 0 22px 48px -10px rgba(6, 182, 212, 0.28);
-      background: rgba(12, 20, 42, 0.75);
+      border-color: rgba(255, 255, 255, 0.45);
+      box-shadow: inset 0 1.5px 2px 0 rgba(255, 255, 255, 0.5), 
+                  0 22px 48px -10px rgba(0, 0, 0, 0.8);
+      background: rgba(12, 20, 42, 0.55);
     }
 
     /* Presentation Mode */
@@ -216,7 +231,7 @@
   <div class="fixed -bottom-40 right-10 w-[35rem] h-[35rem] bg-indigo-500/12 rounded-full pointer-events-none -z-10 blur-3xl"></div>
 
   <!-- ================= TOP NAVIGATION BAR ================= -->
-  <header class="fixed top-0 inset-x-0 h-16 bg-[#050a18]/70 backdrop-blur-2xl border-b border-white/15 z-40 px-3 md:px-8 flex items-center justify-between">
+  <header class="fixed top-0 inset-x-0 h-16 bg-[#050a18]/45 backdrop-blur-2xl border-b border-white/20 z-40 px-3 md:px-8 flex items-center justify-between">
     <!-- Brand -->
     <div class="flex items-center gap-2.5 sm:gap-3">
       <div class="relative flex items-center justify-center w-10 h-10 rounded-2xl liquid-btn-cyan text-white font-black text-xl shadow-lg shadow-cyan-500/30">
@@ -664,7 +679,7 @@
   </main>
 
   <!-- ================= BOTTOM PRESENTATION BAR (Liquid Glass) ================= -->
-  <footer class="fixed bottom-0 inset-x-0 h-16 bg-[#050a18]/75 backdrop-blur-2xl border-t border-white/15 z-40 px-4 md:px-8 flex items-center justify-between presentation-controls">
+  <footer class="fixed bottom-0 inset-x-0 h-16 bg-[#050a18]/45 backdrop-blur-2xl border-t border-white/20 z-40 px-4 md:px-8 flex items-center justify-between presentation-controls">
     <div class="flex items-center gap-3">
       <span id="slideIndicator" class="text-xs font-extrabold px-3.5 py-1.5 rounded-full liquid-btn text-cyan-300 border border-cyan-400/40">
         1 / 6-slayd
