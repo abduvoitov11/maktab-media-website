@@ -1,0 +1,16 @@
+{
+  "name": "maktab-media-website",
+  "version": "1.0.0",
+  "description": "Maktab Media Koordinatori Strategik Taqdimot Veb-Sayti (iOS 28 Liquid Glass)",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "media-maktab",
+    "presentation",
+    "ios28-liquid-glass",
+    "vercel"
+  ],
+  "author": "Torabek",
+  "license": "MIT"
+}
